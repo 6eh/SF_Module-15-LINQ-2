@@ -3,8 +3,8 @@
 <b>Курс: C# от Skill Factory</b><br />
 <b>Модуль: 15</b><br />
 <b>Тема: LINQ ч.2</b><br />
-<hr>
 <br />
+
 Есть список учеников школы с разбивкой по классам:
 ```csharp
 using System;
