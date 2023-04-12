@@ -1,16 +1,8 @@
 <H1>LINQ ч. 2</H1>
 <H2>Операции с множествами.</H2>
+
 <b>Except() - Разность</b><br />
 Исключает из одной коллекции то, что содержится в другой. <b>Важно!</b> Метод Except() возвращает только уникальные элементы.
-```csharp
-var nums = new List<int>() {2, 9, 7};
-var orderedNums = nums.OrderBy(n => n);
- 
-// вернёт 2, 7, 9
-foreach (var num in orderedNums)
-   Console.WriteLine(num);
-```
-раивьыб
 ```csharp
 string[] drinks = { "Вода", "Кока-кола", "Лимонад" , "Вино"}; // Список напитков в продаже
 string[] alcohol = { "Вино", "Пиво", "Сидр"}; // Алкогольные напитки
