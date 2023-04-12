@@ -17,6 +17,7 @@ foreach (string drink in drinksForKids)
 ```
 <br />
 <b>Intersect() - Пересечение</b><br />
+
 Находит общие элементы коллекций.
 ```csharp
 string[] cars = { "Волга", "Москвич", "Нива", "Газель" };
