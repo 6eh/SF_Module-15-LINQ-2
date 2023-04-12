@@ -1,4 +1,5 @@
-﻿
+﻿/// 15.6.6. ПРАКТИЧЕСКОЕ ЗАДАНИЕ (HW-03)
+/// Напишите метод, который соберет всех учеников всех классов в один список, используя LINQ.
 
 var classes = new[]
            {
@@ -6,16 +7,17 @@ var classes = new[]
                new Classroom { Students = {"Anna", "Viktor", "Vladimir"}, },
                new Classroom { Students = {"Bulat", "Alex", "Galina"}, }
            };
+
 var allStudents = GetAllStudents(classes);
 
 Console.WriteLine(string.Join(" ", allStudents));
-GetAllStudents(classes);
 
 Console.ReadKey();
 
 static string[] GetAllStudents(Classroom[] classes)
 {
-    return null;
+    // Решение
+    return classes.SelectMany(c => c.Students).ToArray();
 }
 
 public class Classroom
