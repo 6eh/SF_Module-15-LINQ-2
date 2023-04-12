@@ -1,9 +1,12 @@
-<H1>LINQ. Операции с множествами.</H1>
-<br />
-<b>Except() - Разность</b><br />
-Исключает из одной коллекции то, что содержится в другой. <b>Важно!</b> Метод Except() возвращает только уникальные элементы.
+<b>OrderBy</b><br />
+Упорядочивает элементы по возрастанию.
 ```csharp
-int sum = numbers.Aggregate((x,y)=> x + y);
+var nums = new List<int>() {2, 9, 7};
+var orderedNums = nums.OrderBy(n => n);
+ 
+// вернёт 2, 7, 9
+foreach (var num in orderedNums)
+   Console.WriteLine(num);
 ```
 раивьыб
 ```csharp
